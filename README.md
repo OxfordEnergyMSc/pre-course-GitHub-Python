@@ -200,7 +200,7 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
 
 2. **Create a new Python file on GitHub**
    - In your web browser, on the GitHub website for this repository, click `Add file` > `Create new file`.
-   - Name the file `Hello.py` (case-sensitive).
+   - Name the file `hello.py` (case-sensitive).
    - In the file editor, type the following code:
      ```python
      print("Hello World")
@@ -208,14 +208,14 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
    - Scroll down and click `Commit new file` to save your changes to the main branch.
 
 3. **Sync your local repository with GitHub**
-   - Open GitHub Desktop. You may notice that `Hello.py` does not appear in your local folder yet.
+   - Open GitHub Desktop. You may notice that `hello.py` does not appear in your local folder yet.
    - Click the `Pull origin` button in GitHub Desktop. This downloads the latest changes from GitHub to your computer.
-   - Check your local repository folder (using Finder or File Explorer). You should now see `Hello.py`.
+   - Check your local repository folder (using Finder or File Explorer). You should now see `hello.py`.
 
 4. **Edit the Python file locally in Visual Studio Code**
    - Open Visual Studio Code.
    - Go to `File > Open Folder` and select your local repository folder.
-   - In the VS Code file explorer, click on `Hello.py` to open it.
+   - In the VS Code file explorer, click on `hello.py` to open it.
    - Change the code to:
      ```python
      print("Hello Oxford")
@@ -223,7 +223,7 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
    - Save the file (`File > Save` or `Ctrl+S`/`Cmd+S`).
 
 5. **Run your Python script in VS Code**
-   - With `Hello.py` open, click the `Run` button at the top (the play symbol ▶️).
+   - With `hello.py` open, click the `Run` button at the top (the play symbol ▶️).
    - If prompted, select your Python interpreter (it should be labelled something like: `Python 3.12.X (base) ~/miniforge3/bin/python`).
    - Look at the terminal at the bottom of the screen. You should see:
      ```
@@ -231,14 +231,14 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
      ```
 
 6. **Commit and push your changes back to GitHub**
-   - Go to GitHub Desktop. You should see a change detected in `Hello.py`.
-   - In the bottom left, write a short summary for your commit (e.g., `Update Hello.py to print Hello Oxford`).
+   - Go to GitHub Desktop. You should see a change detected in `hello.py`.
+   - In the bottom left, write a short summary for your commit (e.g., `Update hello.py to print 'Hello Oxford'`).
    - Click `Commit to main`.
    - Click `Push origin` to upload your changes to GitHub.
 
 7. **Check your changes on GitHub**
    - Go back to the GitHub website for your repository.
-   - Click on `Hello.py` and confirm it now prints `Hello Oxford`.
+   - Click on `hello.py` and confirm it now prints `Hello Oxford`.
 
 ---
 
