@@ -1,10 +1,16 @@
 # Pre-course Python and GitHub Setup
 Welcome to Oxford and the Energy Systems MSc Course.
 
-This pre-course assignment will introduce you to python, Git and GitHub, and ensure you have the software installed in advance of the - ```Introduction to Python for Energy Systems Analysis``` - Skills Week Course.
+This pre-course activity is intended as an introduction to Python, Git, and GitHub, to ensure you have the required software installed before the *Introduction to Python for Energy Systems Analysis* Skills Week course in week 3. This is for students with no prior experience in programming or GitHub. 
+
+For those familiar with python, you may still find this a useful refresher - please at least check you have a working python environment before the course begins.
 
 ## Pre-Course Contents
-[Course Intro](#introduction-to-python-for-energy-systems-analysis)
+- [Course Intro](#introduction-to-python-for-energy-systems-analysis)
+- [Git and GitHub](#git-and-github)
+- [Software Installation](#part-1---install-software)
+- [GitHub Flow](#part-2---learn-the-github-flow)
+- [GitHub Activity](#part-3---github-activity)
 
 
 ## Introduction to Python for Energy Systems Analysis
@@ -36,13 +42,13 @@ GitHub is home to some of the most advanced technologies in the world. Whether y
 To make the most efficient use of our short time during skills week, it will be helpful for you to install the software we intend to use before the course. Follow the instructions below for your operating system.
 
 ### Miniforge
-Python is typically installed through a package manager or distribution. Anaconda is the most well know python distribution for data science. However, recent changes to the Anaconda license agreement has restricted its use within commercial settings. While it is still free for Personal, Educational, Open-Source or Small Business use, in this course, we will use Miniforge instead.
+Python is typically installed through a package manager or distribution. Anaconda is a well-known Python distribution for data science. In this course, we will use Miniforge instead.
 
-Miniforge is a minimal install package manager for python. As default it uses the Conda-Forge channel for accessing completely open-source python libraries.
+Miniforge is a minimal Python distribution that includes the Conda package manager. By default, it uses the conda-forge channel to access open-source Python packages.
 
 Follow the instructions to install Miniforge for your operating system here:
 - Windows: [Miniforge Windows Installation](https://github.com/conda-forge/miniforge?tab=readme-ov-file#windows)
-- MacOS/Linux: [Miniforge MacOS/Linux Installation](https://github.com/conda-forge/miniforge?tab=readme-ov-file#unix-like-platforms-macos-linux--wsl)
+- macOS: [Miniforge macOS installation](https://github.com/conda-forge/miniforge?tab=readme-ov-file#unix-like-platforms-macos-linux--wsl)
 
 Note, for installation on MacOS, make sure the filename referred to in the curl or wget command matches the correct file in [this table](https://github.com/conda-forge/miniforge?tab=readme-ov-file#requirements-and-installers).
 For example, the command to use to download the installer for MacOS with arm64 Apple Silicon is
@@ -53,8 +59,8 @@ You then run:
 
 ```bash Miniforge3-MacOSX-arm64.sh``` to install.
 
-#### Verify Install
-Open a new terminal (Mac and Linux) or the Miniforge Prompt (Windows - this should appear in the Start menu).
+#### Verify installation
+Open a new terminal on macOS, or the Miniforge Prompt on Windows (this should appear in the Start menu).
 
 In the prompt window, type:
 ```
@@ -63,25 +69,6 @@ python --version
 ```
 
 You should see version numbers for both commands.
-
-<!-- ### Anaconda
-
-Anaconda is a Python distribution that includes Python, popular data science packages, and the conda package manager. It's the easiest way to get started with Python for data analysis.
-
-**Installation Steps:**
-1. Visit [anaconda.com/download](https://www.anaconda.com/download)
-2. Download the appropriate installer for your operating system
-3. Run the installer and follow the setup wizard
-4. **Important**: When prompted, check the box to "Add Anaconda to PATH" (Windows) or allow the installer to initialize conda
-5. Restart your terminal/command prompt after installation
-
-**Verify Installation:**
-Open a new terminal/command prompt and type:
-```bash
-conda --version
-python --version
-```
-You should see version numbers for both commands. -->
 
 ### Visual Studio Code
 
@@ -93,7 +80,6 @@ Visual Studio Code (VS Code) is a free, lightweight code editor with excellent P
 3. Install using the downloaded file:
    - **Windows**: Run the `.exe` installer
    - **macOS**: Drag VS Code to your Applications folder
-   - **Linux**: Install the `.deb` or `.rpm` package
 4. Launch VS Code after installation
 
 **Extensions:**
@@ -116,7 +102,6 @@ GitHub Desktop provides a visual interface for Git and GitHub, making it easier 
 3. Install the application:
    - **Windows**: Run the installer
    - **macOS**: Drag to Applications folder
-   - **Linux**: GitHub Desktop is not officially supported, but you can use Git from the command line
 4. Launch GitHub Desktop and sign in with your GitHub account
    - If you don't have a GitHub account, create one at [github.com](https://github.com)
 
@@ -145,14 +130,14 @@ To learn more about cloning, read ["Cloning a Repository"](https://docs.github.c
 #### Committing and pushing
 **Committing** and **pushing** are how you can add the changes you made on your local machine to the remote repository in GitHub. That way your instructor and/or teammates can see your latest work when you’re ready to share it. You can make a commit when you have made changes to your project that you want to “checkpoint.” You can also add a helpful **commit message** to remind yourself or your teammates what work you did (e.g. “Added a README with information about our project”).
 
-Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it 🙂
+Once you have a commit or multiple commits that you’re ready to add to your repository, you can use the push command to add those changes to your remote repository. Committing and pushing may feel new at first, but we promise you’ll get used to it.
 
 ### 💻 GitHub terms to know 
 
 #### Repositories 
 We mentioned repositories already, they are where your project work happens, but let’s talk a bit more about the details of them! As you work more on GitHub you will have many repositories which may feel confusing at first. Fortunately, your ["GitHub dashboard"](https://docs.github.com/en/github/setting-up-and-managing-your-github-user-account/about-your-personal-dashboard) helps to easily navigate to your repositories and see useful information about them. Make sure you’re logged in to see it!
 
-Repositories also contain **README**s. You can add a README file to your repository to tell other people why your project is useful, what they can do with your project, and how they can use it. We are using this README to communicate how to learn Git and GitHub with you. 😄 
+Repositories also contain **READMEs**. You can add a README file to tell other people why your project is useful, what they can do with it, and how to use it. We are using this README to communicate how to learn Git and GitHub. 
 To learn more about repositories read ["Creating, Cloning, and Archiving Repositories](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-repositories) and ["About README's"](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/about-readmes). 
 
 #### Branches
@@ -171,7 +156,7 @@ To learn more about pull requests, read ["About Pull Requests"](https://docs.git
 #### Issues
 Issues are a way to track enhancements, tasks, or bugs for your work on GitHub. Issues are a great way to keep track of all the tasks you want to work on for your project and let others know what you plan to work on. You can also use issues to tell a favorite open source project about a bug you found or a feature you think would be great to add!
 
-For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work and you can read more about them [in this "About Project boards document](https://docs.github.com/en/github/managing-your-work-on-github/about-project-boards). You likely won’t need a project board for your assignments, but once you move on to even bigger projects, they’re a great way to organize your team’s work!
+For larger projects, you can keep track of many issues on a project board. GitHub Projects help you organize and prioritize your work; see [About Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects). You likely won’t need a project board for your assignments, but they can be useful for organizing team work.
 You can also link together pull requests and issues to show that a fix is in progress and to automatically close the issue when someone merges the pull request.
 To learn more about issues and linking them to your pull requests, read ["About Issues"](https://docs.github.com/en/github/managing-your-work-on-github/about-issues). 
 
@@ -180,25 +165,28 @@ To learn more about issues and linking them to your pull requests, read ["About 
 Your profile page tells people the story of your work through the repositories you're interested in, the contributions you've made, and the conversations you've had. You can also give the world a unique view into who you are with your profile README. You can use your profile to let future employers know all about you! 
 To learn more about your user profile and adding and updating your profile README, read ["Managing Your Profile README"](https://docs.github.com/en/github/setting-up-and-managing-your-github-profile/managing-your-profile-readme). 
 
-#### Using markdown on GitHub 
+#### Using Markdown on GitHub
 
-You might have noticed already, but you can add some fun styling to your issues, pull requests, and files. ["Markdown"](https://guides.github.com/features/mastering-markdown/) is an easy way to style your issues, pull requests, and files with some simple syntax. This can be helpful to organize your information and make it easier for others to read. You can also drop in gifs and images to help convey your point!
+You might have noticed already, but you can add styling to your issues, pull requests, and files. [Markdown](https://guides.github.com/features/mastering-markdown/) is an easy way to style them using simple syntax. This can help organize information and make it easier for others to read. You can also add GIFs and images to help convey a point!
 To learn more about using GitHub’s flavor of markdown, read ["Basic Writing and Formatting Syntax"](https://docs.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax). 
 
 
 
-## Part 3: GitHub Activity
+## Part 3 - GitHub Activity
 
 In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, and Python. You'll learn how to clone a repository, create and edit files, commit changes, and run your first Python script. These are essential skills for collaborating and sharing code in any programming or data science project and will ensure you are well prepared for the Introduction to Python for Energy Analysis Course during skills week.
 
 ### Step-by-Step Instructions
 
-1. **Clone this repository to your computer**
-   - On the GitHub page for this repository, click the green `<> Code` button near the top right.
+1. **Create a repository from this template**
+   - Click the "Use this template" button at the top right of this page. This will create a new repository in your GitHub account with the same contents as this one, without copying its commit history.
+2. **Clone the repository to your computer**
+   - Ensure you are viewing the version of this repository that is in your GitHub account (not the original template).
+   - Click the green `<> Code` button near the top right.
    - Select `Open with GitHub Desktop`. This will launch the GitHub Desktop app.
    - Choose a location on your computer to save the repository (e.g., `Documents/GitHub/{repo name}`) and click `Clone`.
 
-2. **Create a new Python file on GitHub**
+3. **Create a new Python file on GitHub**
    - In your web browser, on the GitHub website for this repository, click `Add file` > `Create new file`.
    - Name the file `hello.py` (case-sensitive).
    - In the file editor, type the following code:
@@ -207,12 +195,12 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
      ```
    - Scroll down and click `Commit new file` to save your changes to the main branch.
 
-3. **Sync your local repository with GitHub**
+4. **Sync your local repository with GitHub**
    - Open GitHub Desktop. You may notice that `hello.py` does not appear in your local folder yet.
    - Click the `Pull origin` button in GitHub Desktop. This downloads the latest changes from GitHub to your computer.
    - Check your local repository folder (using Finder or File Explorer). You should now see `hello.py`.
 
-4. **Edit the Python file locally in Visual Studio Code**
+5. **Edit the Python file locally in Visual Studio Code**
    - Open Visual Studio Code.
    - Go to `File > Open Folder` and select your local repository folder.
    - In the VS Code file explorer, click on `hello.py` to open it.
@@ -222,7 +210,7 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
      ```
    - Save the file (`File > Save` or `Ctrl+S`/`Cmd+S`).
 
-5. **Run your Python script in VS Code**
+6. **Run your Python script in VS Code**
    - With `hello.py` open, click the `Run` button at the top (the play symbol ▶️).
    - If prompted, select your Python interpreter (it should be labelled something like: `Python 3.12.X (base) ~/miniforge3/bin/python`).
    - Look at the terminal at the bottom of the screen. You should see:
@@ -230,13 +218,13 @@ In this activity, you'll get hands-on experience with GitHub, GitHub Desktop, an
      Hello Oxford
      ```
 
-6. **Commit and push your changes back to GitHub**
+7. **Commit and push your changes back to GitHub**
    - Go to GitHub Desktop. You should see a change detected in `hello.py`.
    - In the bottom left, write a short summary for your commit (e.g., `Update hello.py to print 'Hello Oxford'`).
    - Click `Commit to main`.
    - Click `Push origin` to upload your changes to GitHub.
 
-7. **Check your changes on GitHub**
+8. **Check your changes on GitHub**
    - Go back to the GitHub website for your repository.
    - Click on `hello.py` and confirm it now prints `Hello Oxford`.
 
@@ -251,7 +239,6 @@ You have:
 - Run your first Python script in VS Code
 - Committed and pushed changes using GitHub Desktop
 
-These are the core skills you'll use throughout your studies and in collaborative coding projects.
 
 ## GitHub Resources
 * [A short video explaining what GitHub is](https://www.youtube.com/watch?v=w3jLJU7DT5E&feature=youtu.be) 
@@ -265,6 +252,6 @@ These are the core skills you'll use throughout your studies and in collaborativ
 
 
 ## Author
-Copyright 2025 University of Oxford. All Rights Reserved.
+Copyright 2026 University of Oxford. All Rights Reserved.
 The authors, being Dr Scot Wheeler, have asserted their moral rights.
 This work is openly licensed via CC BY 4.0. 
